@@ -31,21 +31,13 @@ const Details = () => {
           params: { api_key },
         });
 
-        // const response = await api.get(`find/${id}`, {
-        //   params: { api_key, external_source: "imdb_id" },
-        // });
-
-        console.log(response?.data);
-
-        console.log(id);
-
         if (response) {
           setMovieDetails(response?.data);
         }
 
         console.log(movieDetails);
       } catch (error) {
-        // router.replace("/404");
+        router.replace("/404");
         console.error(222, error);
       }
     };
