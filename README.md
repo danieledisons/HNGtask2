@@ -1,4 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Hosting
+The deployed website can be accessed at https://hn-gtask2.vercel.app/
+
+## Prerequisite
+You need to be logged in to the TMDB website, you also need to have an API Key based on your login info.
+After you get your API Key, insert it in the params when fetching data from the API.
+
 
 ## Getting Started
 
