@@ -8,7 +8,7 @@ import {
   CalendarOutlined,
 } from "@ant-design/icons";
 import axios from "axios";
-import styles from "./Moviedetails.module.css";
+import styles from "../../components/Styles/Moviedetails.module.css";
 
 const Details = () => {
   const [movieDetails, setMovieDetails] = useState([]);
