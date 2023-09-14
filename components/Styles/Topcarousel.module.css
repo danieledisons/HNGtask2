@@ -1,0 +1,23 @@
+.bannercard {
+    position: relative;
+}
+.bannercard img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bannerdescription {
+    position: absolute;
+    top: 25%;
+    color: white;
+    margin-left: 64px;
+    /* border: 1px solid greenyellow; */
+    max-width: 404px;
+    min-height: 285px;
+}
+
+.searchbar {
+    position: absolute;
+    top: 2%;
+    right: 30%;
+}
