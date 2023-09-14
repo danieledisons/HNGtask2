@@ -63,7 +63,7 @@ const Topcarousel = () => {
           params: { api_key },
         });
 
-        const RandomMovies = res.data.results.slice(16, 19);
+        const RandomMovies = res.data.results.slice(0, 4);
 
         setMovieData(RandomMovies);
 
