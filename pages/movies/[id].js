@@ -17,7 +17,7 @@ const Details = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  console.log(router?.query?.id);
+  // console.log(router?.query?.id);
 
   useEffect(() => {
     const api_key = "a88164522365d78d10f28d20e5bcd4d5";
@@ -30,6 +30,14 @@ const Details = () => {
         const response = await api.get(`movie/${id}`, {
           params: { api_key },
         });
+
+        // const response = await api.get(`find/${id}`, {
+        //   params: { api_key, external_source: "imdb_id" },
+        // });
+
+        // console.log(response?.data);
+
+        // console.log(id);
 
         if (response) {
           setMovieDetails(response?.data);
