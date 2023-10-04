@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Typography } from "antd";
 import axios from "axios";
 
@@ -41,7 +42,9 @@ const CardComponent = (props) => {
   return (
     <div data-testid="movie-card">
       <Link href={"/movies/" + props?.id}>
-        <img
+        <Image
+          width={250}
+          height={375}
           onClick={(event) => handleClick(event, props?.id)}
           style={{ width: "250px", height: "490" }}
           alt="movie poster"
